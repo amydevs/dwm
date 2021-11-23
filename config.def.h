@@ -108,10 +108,10 @@ static const Key keys[] = {
 /* resizemousescroll direction argument list */
 static const int scrollargs[][2] = {
 	/* width change         height change */
-	{ +scrollsensetivity,	0 },
 	{ -scrollsensetivity,	0 },
-	{ 0, 				  	+scrollsensetivity },
-	{ 0, 					-scrollsensetivity },
+	{ +scrollsensetivity,	0 },
+	{ 0, 				  	-scrollsensetivity },
+	{ 0, 					+scrollsensetivity },
 };
 
 /* button definitions */
