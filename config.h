@@ -118,11 +118,11 @@ static Key keys[] = {
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 
-	{ 0,                       XF86XK_AudioLowerVolume, spawn, {.v = downvol } },
-	{ 0,                       XF86XK_AudioMute, spawn, {.v = mutevol } },
-	{ 0,                       XF86XK_AudioRaiseVolume, spawn, {.v = upvol   } },
-	{ 0,				XF86XK_MonBrightnessUp,		spawn,	{.v = light_up} },
-	{ 0,				XF86XK_MonBrightnessDown,	spawn,	{.v = light_down} },
+	{ 0,                       0x1008FF11, spawn, {.v = downvol } },
+	{ 0,                       0x1008FF12, spawn, {.v = mutevol } },
+	{ 0,                       0x1008FF13, spawn, {.v = upvol   } },
+	{ 0,				0x1008FF02,		spawn,	{.v = light_up} },
+	{ 0,				0x1008FF03,	spawn,	{.v = light_down} },
 };
 
 /* button definitions */
