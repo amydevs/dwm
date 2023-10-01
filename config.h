@@ -75,6 +75,13 @@ static const char *mutevol[]    = { "pactl",   "set-sink-mute",   "0",      "tog
 static const char *light_up[]   = { "light",   "-A", "5", NULL };
 static const char *light_down[] = { "light",   "-U", "5", NULL };
 
+#define XF86XK_AudioLowerVolume	0x1008FF11   /* Volume control down        */
+#define XF86XK_AudioMute	0x1008FF12   /* Mute sound from the system */
+#define XF86XK_AudioRaiseVolume	0x1008FF13   /* Volume control up          */
+
+#define XF86XK_MonBrightnessUp   0x1008FF02  /* Monitor/panel brightness */
+#define XF86XK_MonBrightnessDown 0x1008FF03  /* Monitor/panel brightness */
+
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
